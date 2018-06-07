@@ -1,0 +1,220 @@
+body {
+	margin: 0;
+	font-size: 1em;
+}
+
+html {
+	font-family: Helvetica Neue,Helvetica,Arial,PingFangTC-Light,Microsoft YaHei,微软雅黑,STHeiti Light,STXihei,"华文细黑",Heiti,黑体,sans-serif;
+}
+
+.header {
+	padding-top: 1.6em;
+}
+
+.header .greeting {
+	margin: 0;
+	color: #f5f5f5;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.25);
+	font-weight: 300;
+	line-height: 1.6em;
+}
+
+.header .labels {
+	margin: .8em 0;
+}
+
+.header .labels .label {
+	position: relative;
+	display: inline-block;
+	margin: 1.2em 0;
+	padding: .5em .75em;
+	background: #333;
+	box-shadow: 0 0 .15em .15em rgba(0,0,0,.15);
+	color: #fff;
+	vertical-align: bottom;
+	font-weight: 300;
+}
+
+.header .labels a.label {
+	text-decoration: none;
+}
+
+.header .labels .label:before {
+	position: absolute;
+	top: -1.75em;
+	left: 0;
+	color: #ddd;
+	content: attr(alt);
+	text-shadow: 2px 2px 4px rgba(0,0,0,.25);
+	font-size: .5em;
+}
+
+.header .labels .label>* {
+	margin-right: .25em;
+}
+
+.header .labels .label .content {
+	color: #ccc;
+}
+
+.header .picture {
+	display: block;
+	box-sizing: content-box;
+	padding: 3%;
+	width: 94%;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 0 .15em .15em rgba(0,0,0,.15);
+}
+
+.header .picture-container {
+	padding: 2em;
+}
+
+.copyright {
+	padding: .5em 1em;
+	background: #2b5045;
+	color: #ddd;
+	font-size: .9em;
+	line-height: 2em;
+}
+
+.header .greeting .chem-element,.hosting {
+	text-decoration: none;
+}
+
+.hosting {
+	display: block;
+	padding: .75em 1em;
+	background: #38685a;
+	color: #eee;
+	font-weight: 400;
+	font-size: .9em;
+}
+
+.hosting .link {
+	color: #acd;
+}
+
+.main-container {
+	background: rgba(70,163,255,.99);
+  	margin: 0 auto;
+    max-width: 64em
+}
+
+.self-desc {
+	margin: 0 auto;
+	width: 90%
+}
+
+.self-desc p {
+	border-left: 3px solid #828486;
+	line-height: 1.8em;
+	padding-left: 1em
+}
+
+.no-wrap {
+	display: inline-block;
+}
+
+.section {
+	margin: 1em auto;
+	max-width: 64em;
+}
+
+.section.shadow {
+	box-shadow: 0 0 .15em .15em rgba(0,0,0,.125);
+}
+
+.chem-element {
+	margin-right: .1em;
+	padding: .35em .1em .35em .35em;
+	border-radius: .25em;
+	background: hsla(0,100%,82%,.09);
+	box-shadow: 0 0 .1em .1em rgba(0,0,0,.05);
+	color: #fff;
+	transition-duration: .5s;
+}
+
+.chem-element:hover {
+	box-shadow: 0 0 .2em .2em hsla(0,0%,100%,.05);
+	transform: translate(1em,1em);
+}
+
+.chem-element[element=Hydrogen]:before {
+	content: '1';
+	vertical-align: -.5em;
+	font-size: .45em;
+}
+
+.chem-element[element=Hydrogen]:hover {
+	background: #faa3a3;
+}
+
+.identity {
+	position: relative;
+	display: block;
+	margin: .4em auto;
+	padding: .4em;
+	width: 90%;
+	border-bottom: .15em solid rgba(0,0,0,.035);
+	line-height: 1.2em;
+}
+
+.identity a {
+	display: block;
+	text-decoration: none;
+}
+
+.identity a>*,.identity>* {
+	vertical-align: middle;
+}
+
+.identity .link {
+	position: absolute;
+	right: .45em;
+	bottom: .5em;
+	display: inline-block;
+	color: #216199;
+	text-align: right;
+}
+
+.identity .fab,.identity .fal,.identity .fas {
+	width: 1.5em;
+	color: rgba(0,10,25,.65);
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.identity .where {
+	color: #333;
+}
+
+.identities {
+	margin: 0;
+	padding: 0;
+}
+
+.identity-category {
+	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1.6em;
+	background: hsla(0,0%,100%,.975);
+	box-shadow: 0 0 .15em .15em rgba(0,0,0,.125);
+}
+
+.identity-category .title {
+	margin: 0;
+	font-weight: 300;
+	line-height: 2em;
+}
+
+.identity-category .title .tag {
+	font-size: .75em;
+}
+
+.identity-category .title .fal,.identity-category .title .far,.identity-category .title .fas {
+	margin: 0 .2em;
+	color: #aaa;
+	transform: rotateZ(-23deg);
+}
